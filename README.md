@@ -2,7 +2,7 @@
   Curriculum Vitae
   <br />
   <a href="https://github.com/marckit/cv-marckit" title="Marckit CV Documentation">
-    <img alt="AwesomeCV" src="https://github.com/marckit/cv-marckit/blob/master/images/profiles/profile04.png" width="200px" height="200px" />
+    <img alt="Marckit CV" src="https://github.com/marckit/cv-marckit/blob/master/images/profile.png" width="200px" height="200px" />
   </a>
 </h1>
 
@@ -62,7 +62,7 @@
 
 | Without Sections | With Sections |
 |:---:|:---:|
-| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-0.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-1.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter.pdf) |
+| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-0.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-0.png)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-1.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-1.png) |
 
 ## How to Use
 
