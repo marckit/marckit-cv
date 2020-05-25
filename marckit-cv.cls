@@ -345,16 +345,22 @@
 %% Define helper macros a user can change easily
 % Header
 \newcommand{\acvHeaderNameDelim}{\space}
-\newcommand{\acvHeaderAfterNameSkip}{10mm}
+% No Quote
+\newcommand{\acvHeaderAfterNameSkip}{5mm}
+% Quote
+%\newcommand{\acvHeaderAfterNameSkip}{10mm}
 \newcommand{\acvHeaderAfterPositionSkip}{2mm}
 \newcommand{\acvHeaderAfterAddressSkip}{2mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{5mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{10mm}
+% No Quote
+\newcommand{\acvHeaderCVsection}{5mm}
+% Quote
+%\newcommand{\acvHeaderAfterSocialSkip}{5mm}
+%\newcommand{\acvHeaderAfterQuoteSkip}{10mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionTopSkip}{5mm}
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
@@ -450,10 +456,12 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \@extrainfo%
         }%
-    } \\[\acvHeaderAfterSocialSkip]%
-    \ifthenelse{\isundefined{\@quote}}%
-      {}%
-      {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
+    } %\\[\acvHeaderAfterSocialSkip]% Quote
+    %\ifthenelse{\isundefined{\@quote}}%
+    %  {}%
+    %  {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
+    % No quote
+    \vspace{\acvHeaderCVsection}
   \end{minipage}%
   \begin{minipage}[c]{\headerphotowidth}%
     \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
@@ -544,7 +552,7 @@
 }
 
 % Define an environment for cvhonor
-\newenvironment{cvhonors}{%
+\newenvironment{cvothers}{%
   \vspace{\acvSectionContentTopSkip}
   \begin{center}
     \setlength\tabcolsep{0pt}

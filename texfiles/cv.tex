@@ -20,8 +20,9 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[letterpaper]{marckit-cv}
-%\documentclass[french,letterpaper]{marckit-cv}
+\documentclass[letterpaper]{marckit-cv}         % -> en
+%\documentclass[french,letterpaper]{marckit-cv} % -> fr
+%\usepackage{babel}                             % -> fr
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=2cm, footskip=.5cm}
@@ -54,17 +55,18 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 \name{Marc-André}{Labelle}
-\position{Food Process Junior Engineer{\enskip\cdotp\enskip}Computer Science Student}
-%\position{Ingénieur junior en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel}
+\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student} % -> en
+%\position{Diplomé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel} % -> fr
 
-\address{5788, 7e Avenue, Montréal, QC, H1Y 2N8, Canada}
+\address{5784, 7e Avenue, Montréal, QC, H1Y 2N8, Canada}
 \mobile{+1 (514) 568-6836}
 \email{marckitmail@gmail.com}
 \github{marckit}
 \gitlab{marckit}
 \linkedin{marckit}
 
-\quote{"The most important intelligence is not artificial"} % -> en
+% No quote
+%\quote{"The most important intelligence is not artificial"} % -> en
 %\quote{"L'intelligence la plus importante n'est pas artificiel"} % -> fr
 
 
@@ -91,13 +93,13 @@
 %\input{cv-en-unlinked/skills.tex}
 %\input{cv-en-unlinked/experience.tex}
 %\input{cv-en-unlinked/extracurricular.tex}
-%\input{cv-en-unlinked/honors.tex}
+%\input{cv-en-unlinked/others.tex}
 
 \input{cv-en/education.tex}
 \input{cv-en/skills.tex}
 \input{cv-en/experience.tex}
 \input{cv-en/extracurricular.tex}
-\input{cv-en/honors.tex}
+\input{cv-en/others.tex}
 
 %\input{cv-fr/formuniversitaire.tex}
 %\input{cv-fr/competences.tex}
