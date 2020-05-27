@@ -20,7 +20,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[letterpaper]{marckit-cv}
-%\usepackage[ddmmyyyy]{datetime} % -> fr
+\usepackage[ddmmyyyy]{datetime} % -> fr
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -55,8 +55,8 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 %\photo[circle,noedge,left]{./images/profile}
 \name{Marc-André}{Labelle}
-\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student} % -> en
-%\position{Diplômé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel} % -> fr
+%\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student} % -> en
+\position{Diplômé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel} % -> fr
 \address{5784, 7e avenue, Montreal, QC H1Y 2N8 Canada}
 \mobile{+1 (514) 568-6836}
 \email{marckitmail@gmail.com}
@@ -75,24 +75,24 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {HR in charge}                       % -> en
-   {Compagny\\Street Address\\City}    % -> en
-% {Les RH}                             % -> fr
-%  {Compagnie\\Adresse civique\\Ville} % -> fr
+%  {HR in charge}                       % -> en
+%   {Compagny\\Street Address\\City}    % -> en
+ {Les RH}                             % -> fr
+  {Compagnie\\Adresse civique\\Ville} % -> fr
 % Date de compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Information Technology} % -> en
-%\lettertitle{Informatique}           % -> fr
+%\lettertitle{Information Technology} % -> en
+\lettertitle{Informatique}           % -> fr
 % Ouverture de la lettre
-\letteropening{Dear Talent Acquisition Advisors,}                % -> en
-%\letteropening{Monsieur ou Madame resposable de l'acquisition de talents,} % -> fr
+%\letteropening{Dear Talent Acquisition Advisors,}                % -> en
+\letteropening{Monsieur ou Madame responsable de l'acquisition de talents,} % -> fr
 % How the letter is closed
-\letterclosing{Hope to meet you soon,}                % -> en
-%\letterclosing{En espérant vous rencontrer bientôt,} % -> fr
+%\letterclosing{Hope to meet you soon,}                % -> en
+\letterclosing{En espérant vous rencontrer bientôt,} % -> fr
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}  % -> en
-%\letterenclosure[Ci-joint]{Curriculum Vitae} % -> fr
+%\letterenclosure[Attached]{Curriculum Vitae}  % -> en
+\letterenclosure[Ci-joint]{Curriculum Vitae} % -> fr
 
 
 %-------------------------------------------------------------------------------
@@ -106,8 +106,8 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Marc-André Labelle~~~·~~~Cover Letter}         % -> en
-% {Marc-André Labelle~~~·~~~Lettre de motivation} % -> fr
+% {Marc-André Labelle~~~·~~~Cover Letter}         % -> en
+  {Marc-André Labelle~~~·~~~Lettre de motivation} % -> fr
   {}
 
 % Print the title with above letter informations
@@ -118,23 +118,23 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
   \lettersection{About me}
-    As part of my professional career starting out in food engineering,
-    I've always been interested in innovative companies.
-    I had the chance to do internships in companies such
-    as the Dominion \& Grimm, Sucre Lantic and Happy Yak.
-    I deepened my knowledge of
-    operations in food manufacturing companies.
+    Dans le cadre de mon parcours professionnel qui débute
+    en ingénierie alimentaire, j'ai toujours été intéressé
+    par les entreprises innovantes.
+    J’ai eu la chance de faire des stages dans des compagnies
+    telles que la Dominion \& Grimm, Sucre Lantic et Happy Yak.
+    J’y ai approfondi mes connaissances de gestion des opérations dans
+    les entreprises manufacturières alimentaires.
 
-    As a new graduate in food engineering
-    and future graduate in computer science, my academic training
-    allowed me to know several software
-    and their applications directly in companies.
+    En tant que nouveau diplômé en génie alimentaire et futur diplômé
+    en informatique, ma formation académique m’a permis de connaître
+    plusieurs logiciels et leurs applications directement en entreprise.
 
   \lettersection{Why your compagny?}
-    You are cool!
+    Vous êtes cool!
 
   \lettersection{Why me?}
-    I'm cool!
+    Je suis cool!
 
 \end{cvletter}
 
