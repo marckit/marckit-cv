@@ -551,7 +551,7 @@
   \end{tabular*}
 }
 
-% Define an environment for cvhonor
+% Define an environment for cvother
 \newenvironment{cvothers}{%
   \vspace{\acvSectionContentTopSkip}
   \begin{center}
@@ -563,8 +563,8 @@
   \end{center}
 }
 % Define a line of cv information(honor, award or something else)
-% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-\newcommand*{\cvhonor}[4]{%
+% Usage: \cvother{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvother}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 

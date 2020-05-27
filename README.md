@@ -15,10 +15,10 @@
     <img alt="CircleCI" src="https://circleci.com/gh/marckit/cv-marckit/tree/master.svg?style=shield" >
   </a>
   <a href="https://raw.githubusercontent.com/marckit/cv-marckit/master/pdf/cv.pdf">
-    <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-green.svg" />
+    <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-blue.svg" />
   </a>
   <a href="https://raw.githubusercontent.com/marckit/cv-marckit/master/pdf/coverletter.pdf">
-    <img alt="Example Coverletter" src="https://img.shields.io/badge/coverletter-pdf-green.svg" />
+    <img alt="Example Coverletter" src="https://img.shields.io/badge/coverletter-pdf-cyan.svg" />
   </a>
 </div>
 
@@ -28,39 +28,46 @@
 
 * [Files](#files)
 * [How to Use](#how-to-use)
-  * [Requirements](#requirements)
-  * [Usage](#usage)
+  - [Requirements](#requirements)
+  - [Usage](#usage)
 * [Credit](#credit)
 
 ## Files
 
 **Source code files**
-- [Source code](texfiles) to build the `tex` to build `pdf`
+- [Source code](texfiles) with `tex` to build `pdf` documents.
 - [cv.tex](texfiles/cv.tex)
-  - Uncomment `%cv-lang` to select language
+  * Change branch to set another language.
+  * Langues available: `french`.
+      - [Français](https://github.com/marckit/cv-marckit/tree/french)
+
 - [coverletter.tex](texfiles/cv.tex)
-  - Comment the line `\photo[circle,noedge,left]{./images/profile}`
+  * Comment the line `\photo[circle,noedge,left]{./images/profile}`
     with `%` to ignore the picture.
-  - Select between `R`, `C` or `L` to align `\makecvheader[R]`
+  * Select between `R`, `C` or `L` to align `\makecvheader[R]`
 
 **Images**
 - Rename any images to `images/profile.png`
 
 **PDF**
 
+- Please download in the [pdf folder](pdf) or clic on the icon below to download it
+  *  <a href="https://raw.githubusercontent.com/marckit/cv-marckit/master/pdf/cv.pdf">
+       <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-blue.svg" />
+     </a>
+  * <a href="https://raw.githubusercontent.com/marckit/cv-marckit/master/pdf/coverletter.pdf">
+      <img alt="Example Coverletter" src="https://img.shields.io/badge/coverletter-pdf-cyan.svg" />
+    </a>
+
 - Curriculum Vitae
-  - Please download in the [pdf folder](pdf) or clic on the icon below to download it
-    -  <a href="https://raw.githubusercontent.com/marckit/cv-marckit/master/pdf/cv.pdf">
-         <img alt="Example CV" src="https://img.shields.io/badge/cv-pdf-green.svg" />
-      </a>
 
 | CV page one |  CV page two |
 |:---:|:---:|
-| [![Cover Letter(Traditional)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p1.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p1.png)  | [![Cover Letter(Marckit)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p2.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p2.png) |
+| [![CV page one](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p1.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p1.png)  | [![CV page two](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p2.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/cv-p2.png) |
 
 - Coverletter template
 
-| Without Sections | With Sections |
+| Without Sections and Picture | With Sections and Picture |
 |:---:|:---:|
 | [![Cover Letter(Traditional)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-0.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-0.png)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-1.png)](https://raw.githubusercontent.com/marckit/cv-marckit/master/images/coverletter-1.png) |
 
@@ -89,7 +96,7 @@ $ make
 
 [**Bitmoji**](https://www.bitmoji.com/) usage for profile picture
 
-[**Awesome-CV**](https://github.com/posquit0/Awesome-CV) forked repo for my CV
+[**Awesome-CV**](https://github.com/posquit0/Awesome-CV) repository inspiration for my CV
 used as template.
 
 [**Fancy CV**](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv)

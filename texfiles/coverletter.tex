@@ -18,9 +18,8 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
+% use 'letterpaper' for US letter, A4 paper size 'a4paper' for europe
 \documentclass[letterpaper]{marckit-cv}
-%\usepackage[ddmmyyyy]{datetime} % -> fr
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -49,14 +48,13 @@
 
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+% PERSONAL INFORMATION
+% Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-%\photo[circle,noedge,left]{./images/profile}
+\photo[circle,noedge,left]{./images/profile}
 \name{Marc-André}{Labelle}
-\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student} % -> en
-%\position{Diplômé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel} % -> fr
+\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student}
 \address{5784, 7e avenue, Montreal, QC H1Y 2N8 Canada}
 \mobile{+1 (514) 568-6836}
 \email{marckitmail@gmail.com}
@@ -64,57 +62,46 @@
 \gitlab{marckit}
 \linkedin{marckit}
 
-% No quote
-%\quote{"The most important intelligence is not artificial"} % -> en
-%\quote{"L'intelligence la plus importante n'est pas artificiel"} % -> fr
-
 
 %-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
+% LETTER INFORMATION
+% All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {HR in charge}                       % -> en
-   {Compagny\\Street Address\\City}    % -> en
-% {Les RH}                             % -> fr
-%  {Compagnie\\Adresse civique\\Ville} % -> fr
-% Date de compilation
+  {HR in charge}
+    {Company\\Street Address\\City}
+% Compilation date
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Information Technology} % -> en
-%\lettertitle{Informatique}           % -> fr
-% Ouverture de la lettre
-\letteropening{Dear Talent Acquisition Advisors,}                % -> en
-%\letteropening{Monsieur ou Madame resposable de l'acquisition de talents,} % -> fr
-% How the letter is closed
-\letterclosing{Hope to meet you soon,}                % -> en
-%\letterclosing{En espérant vous rencontrer bientôt,} % -> fr
-% Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}  % -> en
-%\letterenclosure[Ci-joint]{Curriculum Vitae} % -> fr
+\lettertitle{Information Technology}
+% Letter is opening message
+\letteropening{Dear Talent Acquisition Advisors,}
+% Letter is closing message
+\letterclosing{Hope to meet you soon,}
+% Any enclosures with the letter, documents, ect.
+\letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Above personal information's printing
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Marc-André Labelle~~~·~~~Cover Letter}         % -> en
-% {Marc-André Labelle~~~·~~~Lettre de motivation} % -> fr
+  {Marc-André Labelle~~~·~~~Cover Letter}
   {}
 
-% Print the title with above letter informations
+% Print the title with above letter's information
 \makelettertitle
 
 %-------------------------------------------------------------------------------
-%	LETTER CONTENT
+% LETTER CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvletter}
   \lettersection{About me}
@@ -130,7 +117,7 @@
     allowed me to know several software
     and their applications directly in companies.
 
-  \lettersection{Why your compagny?}
+  \lettersection{Why your company?}
     You are cool!
 
   \lettersection{Why me?}
@@ -140,7 +127,7 @@
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
+% Print the signature and enclosures with above letter's information
 \makeletterclosing
 
 \end{document}

@@ -19,10 +19,8 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[letterpaper]{marckit-cv}         % -> en
-%\documentclass[french,letterpaper]{marckit-cv} % -> fr
-%\usepackage{babel}                             % -> fr
+% 'letterpaper' for US letter, 'a4paper' for europe
+\documentclass[letterpaper]{marckit-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=2cm, footskip=.5cm}
@@ -33,17 +31,8 @@
 % Color for highlights
 % My Favorite Colors: awesome-blue
 \colorlet{awesome}{awesome-blue}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
@@ -51,12 +40,11 @@
 
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+% PERSONAL INFORMATION
+% Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 \name{Marc-André}{Labelle}
-\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student} % -> en
-%\position{Diplomé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel} % -> fr
+\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student}
 
 \address{5784, 7e Avenue, Montréal, QC, H1Y 2N8, Canada}
 \mobile{+1 (514) 568-6836}
@@ -65,15 +53,11 @@
 \gitlab{marckit}
 \linkedin{marckit}
 
-% No quote
-%\quote{"The most important intelligence is not artificial"} % -> en
-%\quote{"L'intelligence la plus importante n'est pas artificiel"} % -> fr
-
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
@@ -86,27 +70,15 @@
 
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
+% CV/RESUME CONTENT
+% Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-%\input{cv-en-unlinked/education.tex}
-%\input{cv-en-unlinked/skills.tex}
-%\input{cv-en-unlinked/experience.tex}
-%\input{cv-en-unlinked/extracurricular.tex}
-%\input{cv-en-unlinked/others.tex}
 
 \input{cv-en/education.tex}
 \input{cv-en/skills.tex}
 \input{cv-en/experience.tex}
 \input{cv-en/extracurricular.tex}
 \input{cv-en/others.tex}
-
-%\input{cv-fr/formuniversitaire.tex}
-%\input{cv-fr/competences.tex}
-%\input{cv-fr/experience.tex}
-%\input{cv-fr/implicuniv.tex}
-%\input{cv-fr/autresexp.tex}
-
 
 %-------------------------------------------------------------------------------
 \end{document}
