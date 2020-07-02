@@ -155,8 +155,8 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+\def\@sectioncolor#1#2#3#4#5#6#7#8{%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3#4#5#6#7#8}}{#1#2#3#4#5#6#7#8}%
 }
 
 

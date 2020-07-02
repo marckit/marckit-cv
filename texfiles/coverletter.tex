@@ -18,8 +18,9 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% use 'letterpaper' for US letter, A4 paper size 'a4paper' for europe
+% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[letterpaper]{marckit-cv}
+\usepackage[ddmmyyyy]{datetime}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -30,8 +31,6 @@
 % Color for highlights
 % My Favorite Colors: awesome-blue
 \colorlet{awesome}{awesome-blue}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -52,9 +51,9 @@
 % Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./images/profile}
+%\photo[circle,noedge,left]{./images/profile}
 \name{Marc-André}{Labelle}
-\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student}
+\position{Diplômé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel}
 \address{5784, 7e avenue, Montreal, QC H1Y 2N8 Canada}
 \mobile{+1 (514) 568-6836}
 \email{marckitmail@gmail.com}
@@ -62,72 +61,73 @@
 \gitlab{marckit}
 \linkedin{marckit}
 
-
 %-------------------------------------------------------------------------------
 % LETTER INFORMATION
 % All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {HR in charge}
-    {Company\\Street Address\\City}
-% Compilation date
+{Les Ressources Humaines}
+  {Compagnie\\Adresse civique\\Ville}
+% Date de compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Information Technology}
-% Letter is opening message
-\letteropening{Dear Talent Acquisition Advisors,}
-% Letter is closing message
-\letterclosing{Hope to meet you soon,}
-% Any enclosures with the letter, documents, ect.
-\letterenclosure[Attached]{Curriculum Vitae}
+\lettertitle{Informatique}
+% Ouverture de la lettre
+\letteropening{Monsieur ou Madame resposable de l'acquisition de talents,}
+% How the letter is closed=
+\letterclosing{En espérant vous rencontrer bientôt,}
+% Any enclosures with the letter
+\letterenclosure[Ci-joint]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Above personal information's printing
+% Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[R]
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Marc-André Labelle~~~·~~~Cover Letter}
+{Marc-André Labelle~~~·~~~Lettre de motivation}
   {}
 
-% Print the title with above letter's information
+% Print the title with above letter informations
 \makelettertitle
 
 %-------------------------------------------------------------------------------
 % LETTER CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvletter}
-  \lettersection{About me}
-    As part of my professional career starting out in food engineering,
-    I've always been interested in innovative companies.
-    I had the chance to do internships in companies such
-    as the Dominion \& Grimm, Sucre Lantic and Happy Yak.
-    I deepened my knowledge of
-    operations in food manufacturing companies.
 
-    As a new graduate in food engineering
-    and future graduate in computer science, my academic training
-    allowed me to know several software
-    and their applications directly in companies.
+  \lettersection{À \space propos de moi}
+    Dans le cadre de mon parcours professionnel qui débute
+    en ingénierie alimentaire, j’ai toujours été fasciné
+    par les entreprises innovantes.
+    J’ai eu la chance de faire des stages dans des compagnies
+    telles que la Dominion \& Grimm, Sucre Lantic et Happy Yak.
+    J’y ai approfondi mes connaissances de gestion des opérations
+    dans les entreprises manufacturières alimentaires.
+    En tant que nouveau diplômé en génie alimentaire
+    et futur diplômé en informatique, ma formation académique
+    m’a permis de connaître différents procédés
+    et leurs applications directement en entreprise.
 
-  \lettersection{Why your company?}
-    You are cool!
+  \lettersection{Pourquoi travailler ici?}
+    Vous êtes cool!
 
-  \lettersection{Why me?}
-    I'm cool!
+
+ \lettersection{Pourquoi suis-je le bon candidat?}
+    Je suis cool!
 
 \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter's information
+% Print the signature and enclosures with above letter informations
 \makeletterclosing
 
 \end{document}

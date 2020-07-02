@@ -19,8 +19,9 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% 'letterpaper' for US letter, 'a4paper' for europe
-\documentclass[letterpaper]{marckit-cv}
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[french,letterpaper]{marckit-cv}
+\usepackage{babel}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=2cm, right=1.4cm, bottom=2cm, footskip=.5cm}
@@ -31,8 +32,17 @@
 % Color for highlights
 % My Favorite Colors: awesome-blue
 \colorlet{awesome}{awesome-blue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
@@ -44,7 +54,7 @@
 % Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 \name{Marc-André}{Labelle}
-\position{Food Process Engineer Graduate{\enskip\cdotp\enskip}Computer Science Student}
+\position{Diplomé en génie alimentaire{\enskip\cdotp\enskip}Étudiant en informatique et génie logiciel}
 
 \address{5784, 7e Avenue, Montréal, QC, H1Y 2N8, Canada}
 \mobile{+1 (514) 568-6836}
@@ -53,11 +63,10 @@
 \gitlab{marckit}
 \linkedin{marckit}
 
-
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal information
+% Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
@@ -74,11 +83,12 @@
 % Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 
-\input{cv-en/education.tex}
-\input{cv-en/skills.tex}
-\input{cv-en/experience.tex}
-\input{cv-en/extracurricular.tex}
-\input{cv-en/others.tex}
+\input{fr-cv/formuniversitaire.tex}
+\input{fr-cv/competences.tex}
+\input{fr-cv/experience.tex}
+\input{fr-cv/implicuniv.tex}
+\input{fr-cv/autresexp.tex}
+
 
 %-------------------------------------------------------------------------------
 \end{document}
